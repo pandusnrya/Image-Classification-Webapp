@@ -1,0 +1,178 @@
+.header-icon1 {
+    height: 70px;
+    width: 393px;
+    position: relative;
+    display: none;
+    max-width: 100%;
+  }
+  .group-icon3,
+  .profile-icon,
+  .vector-icon2 {
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .profile-icon {
+    height: 63.96%;
+    width: 95.47%;
+    top: 18.24%;
+    right: 2.37%;
+    bottom: 17.79%;
+    left: 2.16%;
+    mix-blend-mode: multiply;
+  }
+  .group-icon3,
+  .vector-icon2 {
+    height: 52.25%;
+    width: 83.19%;
+    top: 23.87%;
+    right: 8.62%;
+    bottom: 23.87%;
+    left: 8.19%;
+    z-index: 1;
+  }
+  .vector-icon2 {
+    height: 7.43%;
+    width: 6.9%;
+    top: 46.4%;
+    right: 46.77%;
+    bottom: 46.17%;
+    left: 46.34%;
+    z-index: 2;
+  }
+  .group-icon4,
+  .group-icon5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46.4px;
+    height: 17.3px;
+    z-index: 2;
+  }
+  .group-icon5 {
+    top: 27.1px;
+  }
+  .group1 {
+    height: 44.4px;
+    width: 46.4px;
+    position: relative;
+    z-index: 1;
+  }
+  .retina-vision-ai1 {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 30px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .retina-vision-ai-beta-container {
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 0 var(--padding-7xs-7);
+    box-sizing: border-box;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-kadwa);
+  }
+  .frame-inner,
+  .header-group {
+    top: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .header-group {
+    align-self: stretch;
+    background: linear-gradient(0deg, #212225, #374163);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: var(--padding-sm-3) var(--padding-smi-3) var(--padding-smi-3);
+    box-sizing: border-box;
+    gap: var(--gap-base-3);
+    z-index: 99;
+    position: sticky;
+    max-width: 100%;
+  }
+  .frame-inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    cursor: pointer;
+  }
+  .cek-katarak1,
+  .frame-icon1 {
+    position: relative;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .frame-icon1 {
+    height: 39px;
+    width: 39px;
+    overflow: hidden;
+  }
+  .cek-katarak1 {
+    align-self: stretch;
+    height: 32px;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .cek-katarak-container {
+    width: 244px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-10xs) 0 0;
+    box-sizing: border-box;
+  }
+  .rectangle-container {
+    flex: 1;
+    flex-direction: row;
+    padding: var(--padding-base) var(--padding-5xs) 15px;
+    position: relative;
+    gap: var(--gap-6xs);
+    max-width: 100%;
+  }
+  .iphone-14-15-pro-1,
+  .iphone-14-15-pro-1-inner,
+  .rectangle-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .iphone-14-15-pro-1-inner {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 var(--padding-smi) 0 var(--padding-xs);
+    max-width: 100%;
+  }
+  .iphone-14-15-pro-1 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-lightgray);
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0 0 696px;
+    gap: var(--gap-base);
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-kadwa);
+  }
+  

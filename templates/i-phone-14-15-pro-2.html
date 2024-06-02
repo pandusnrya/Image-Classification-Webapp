@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='i-phone-14-15-pro-2.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" />
+</head>
+<body>
+    <div class="iphone-14-15-pro-2">
+        <header class="header-parent">
+            <img class="header-icon" alt="" src="{{ url_for('static', filename='header.svg') }}" />
+
+            <div class="group">
+                <img class="vector-icon" alt="" src="{{ url_for('static', filename='profile.svg') }}" />
+                <img class="group-icon" alt="" src="{{ url_for('static', filename='group.svg') }}" />
+                <img class="vector-icon1" loading="lazy" alt="" src="{{ url_for('static', filename='vector-1.svg') }}" />
+                <img class="group-icon1" alt="" src="{{ url_for('static', filename='group-1.svg') }}" />
+                <img class="group-icon2" alt="" src="{{ url_for('static', filename='group-2.svg') }}" />
+            </div>
+            <header class="retina-vision-ai-beta-wrapper">
+                <h3 class="retina-vision-ai">Retina Vision AI (Beta)</h3>
+            </header>
+        </header>
+        <section class="iphone-14-15-pro-2-inner">
+            <div class="rectangle-parent">
+                <div class="frame-child"></div>
+                <div class="frame-parent">
+                    <div class="frame-group">
+                        <img class="frame-icon" loading="lazy" alt="" src="{{ url_for('static', filename='frame.svg') }}" />
+                        <div class="cek-katarak-wrapper">
+                            <h3 class="cek-katarak">Cek Katarak</h3>
+                        </div>
+                    </div>
+                    <div class="frame-wrapper">
+                        <div class="rectangle-group">
+                            <div class="frame-item"></div>
+                            <div class="upload-your-file-here-wrapper">
+                                <div class="upload-your-file">Upload your file here:</div>
+                            </div>
+                            <button class="button-browse" onclick="document.getElementById('fileInput').click()">
+                                <div class="button-browse-child"></div>
+                                <div class="browse">Browse</div>
+                            </button>
+                            <form action="/submit" method="post" enctype="multipart/form-data">
+                                <input type="file" id="fileInput" style="display: none;" name="my_image">
+                                <div class="result-display">
+                                    <button type="submit" class="button-submit">
+                                        <div class="button-submit-child"></div>
+                                        <div class="submit">Submit</div>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% if prediction %}
+                <div class="result-wrapper">
+                    <div class="result">Result : <i> {{prediction}} </i></div>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

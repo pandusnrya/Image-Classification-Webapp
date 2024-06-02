@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap"
+    />
+</head>
+<body>
+    <div class="iphone-14-15-pro-1">
+        <header class="header-group">
+            <img class="header-icon1" alt="" src="{{ url_for('static', filename='header.svg') }}" />
+
+            <div class="group1">
+                <img class="vector-icon2" alt="" src="{{ url_for('static', filename='vector.svg') }}" />
+                <img class="group-icon3" alt="" src="{{ url_for('static', filename='group1.svg') }}" />
+                <img class="vector-icon3" loading="lazy" alt="" src="{{ url_for('static', filename='vector-1.svg') }}" />
+                <img class="group-icon4" alt="" src="{{ url_for('static', filename='group-1.svg') }}" />
+                <img class="group-icon5" alt="" src="{{ url_for('static', filename='group-21.svg') }}" />
+            </div>
+            <header class="retina-vision-ai-beta-container">
+                <div class="retina-vision-ai1">Retina Vision AI (Beta)</div>
+            </header>
+        </header>
+        <div class="iphone-14-15-pro-1-inner">
+            <div class="rectangle-container">
+                <div class="frame-inner" id="rectangle"></div>
+                <img class="frame-icon1" loading="lazy" alt="" src="{{ url_for('static', filename='frame.svg') }}" />
+                <div class="cek-katarak-container">
+                    <div class="cek-katarak1">Cek Katarak</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var rectangle = document.getElementById("rectangle");
+        if (rectangle) {
+            rectangle.addEventListener("click", function (e) {
+                window.location.href = "{{ url_for('next_page') }}";
+            });
+        }
+    </script>
+</body>
+</html>
